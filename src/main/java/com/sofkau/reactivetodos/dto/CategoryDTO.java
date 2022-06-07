@@ -17,4 +17,5 @@ public class CategoryDTO {
     private String message;
 
     private List<ToDo> toDos;
+
 }

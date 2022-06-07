@@ -13,13 +13,13 @@ import org.springframework.web.reactive.config.EnableWebFlux;
 @EnableWebFlux
 @RequiredArgsConstructor
 public class TodoMapper {
-    private final ModelMapper modelMapper = new ModelMapper();
+    private static final ModelMapper modelMapper = new ModelMapper();
 
     public CategoryDTO toCategoryDTO(Category category) {
         return modelMapper.map(category, CategoryDTO.class);
     }
 
-    public Category toEntity(CategoryDTO dto) {
+    public static Category toEntity(CategoryDTO dto) {
         return modelMapper.map(dto, Category.class);
     }
 
