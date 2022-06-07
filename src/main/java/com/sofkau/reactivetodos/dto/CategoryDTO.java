@@ -1,10 +1,12 @@
 package com.sofkau.reactivetodos.dto;
 
 import com.sofkau.reactivetodos.collection.ToDo;
+import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 import java.util.List;
 
+@Data
 public class CategoryDTO {
     private String id;
 

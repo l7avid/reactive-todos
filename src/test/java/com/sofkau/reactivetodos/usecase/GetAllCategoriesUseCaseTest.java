@@ -2,6 +2,6 @@ package com.sofkau.reactivetodos.usecase;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class GetCategoriesUseCaseTest {
+class GetAllCategoriesUseCaseTest {
 
 }
