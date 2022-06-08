@@ -45,6 +45,7 @@ class GetAllCategoriesUseCaseTest {
         StepVerifier
                 .create(Flux.just(Mockito.when(getAllCategoriesUseCase.apply())
                         .thenReturn(Flux.just(categoryDTO1, categoryDTO2))))
+                .thenConsumeWhile(x -> true)
                 .verifyComplete();
     }
 }
